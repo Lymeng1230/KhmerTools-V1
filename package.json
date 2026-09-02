@@ -1,0 +1,36 @@
+{
+  "name": "khmertools",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Production-ready Khmer-first AI, PDF, OCR, image and media tools platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check public/script.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "docx": "^9.5.1",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "file-type": "^22.0.2",
+    "helmet": "^8.1.0",
+    "multer": "^2.0.2",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.4",
+    "tesseract.js": "^6.0.1"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}
